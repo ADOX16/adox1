@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+}
+h1{
+    color:chartreuse;
+    font-size: 3em;
+    font-weight: bolder;
+}
+#firist_lesson{
+    color: aqua;
+}
+.Note{
+    color: crimson;
+}
+dt{
+    color: deeppink;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-weight: bold;
+    cursor: default;
+}
+dd{
+    color:rgb(205, 255, 255);
+    width: 430px;
+}
+#css{
+    border: 2px solid antiquewhite;
+    border-radius: 20px;
+    border-top-width: 0dvi;
+    margin-top: -10px;
+}
+#css::first-letter{
+    font-size: 2em;
+}
+span{
+    background-color: rgb(22, 22, 24);
+    color: white;
+    border: 1px solid white;
+    margin: 5px;
+    height: 100px;
+    overflow: auto;
+}
+span::selection{
+    background-color: chartreuse;
+    color:black
+}
+.pic{
+    margin: 10px;
+    float: left;
+}
+#Tags{
+    margin:auto;
+}
+#here{
+    font-size: large;
+}
+#here:hover{
+    color: white;
+    font-size: x-large;
+}
+#here:active{
+    color:red;
+    font-size: xx-large;
+}
+pre::selection{
+    background-color: black;
+    font-size: large;
+    color: white;
+}
+dd::selection{
+    background-color: black;
+    font-size: larger;
+    color: deeppink;
+}
+dt:hover{
+    font-weight:1000;
+    color:chartreuse;
+}
+dt::selection{
+    background-color: black;
+    color:darkmagenta
+}
+img::selection{
+    background-color: black;
+}
+h1::selection{
+    background-color: black;
+    color: blue;
+}
+#nob{
+    color: deeppink;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+    font-weight: bold;
+    cursor: default;
+    text-decoration: none;
+}
+#nob:hover{
+    font-weight:1000;
+    color:chartreuse;
+}
