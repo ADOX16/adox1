@@ -6,7 +6,7 @@ h1{
     font-size: 3em;
     font-weight: bolder;
 }
-#firist_lesson{
+.lesson{
     color: aqua;
 }
 .Note{
@@ -27,6 +27,8 @@ dd{
     border-radius: 20px;
     border-top-width: 0dvi;
     margin-top: -10px;
+    text-align: center;
+    padding-right: 10px;
 }
 #css::first-letter{
     font-size: 2em;
@@ -96,4 +98,67 @@ h1::selection{
 #nob:hover{
     font-weight:1000;
     color:chartreuse;
+}
+
+#css:hover{
+    cursor: default;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes glow{
+    to{text-shadow: 0px 0px 20px cyan;}
+    
+}
+.ani{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(9, 255, 0);
+    animation-name: go;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes go {
+    to{transform: translateX(350px);}
+}
+#ani1{
+    animation-direction: reverse;
+}
+#ani2{
+    animation-direction: alternate;
+}
+#ani3{
+    animation-direction: alternate-reverse;
+}
+#ani4{
+    animation-timing-function: ease-in-out;
+}
+#ani5{
+    animation-timing-function: linear;
+}
+#ani6{
+    animation-timing-function: steps(5);
+}
+
+#ani7{
+    width: 100px;
+    height: 100px;
+    float: right;
+    transform: translatey(50px);
+    background-color: rgb(9, 255, 0);
+    animation-name: godown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.64,-1.29, 0.17, 2.05);
+}
+@keyframes godown{
+    to{transform: translatey(220px);}
+}
+#uponwhat{
+    color: black;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
 }

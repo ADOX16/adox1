@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1 id = "css">css</h1>
-        <pre id = firist_lesson>so okay css. we can add an id to any 
+        <pre class = lesson>so okay css. we can add an id to any 
             thing in html and we can call it in the 
             css file using # and we can also put a class 
             and it will be mention in css using . yse a dot 
@@ -38,6 +38,9 @@
             <dt>-color</dt>
             <dd>it changes color of text and can be
                  used to alot of things i thinK?</dd>
+
+            <dt>-opacity</dt>
+            <dd>change the opacity of an element</dd>
 
             <dt>-background-color</dt> 
             <dd>it changes the background color</dd>
@@ -147,10 +150,105 @@
                 we can also position it using <span>background-postion</span> and like the
                 postion : fixed propety we also have it in background <span>background-attachment</span>
                 but after we done the picture will still be awful and not acullaly fixed so to do that
-                we add this:<br><span>background-size: cover;</span>.
+                we add this:<br><span>background-size: cover;</span>.         <a  href="upon_what.html"><pre id="uponwhat">                                                                                         ◆︎◻︎□︎■︎ ⬥︎♒︎♋︎⧫︎✍︎</pre></a>
             </dd>
 
-              
+            <dt>-tranform</dt>
+            <dd>it let us potsion, rotate, scale, or skew an element
+                using <span>transform: translateX(100px);</span> we can change the 
+                postion of the element same with translateY or we can also use
+                <span>translate(x, y)</span> then we have also <span>rotateX(180deg)</span>
+                and also rotateY and also <span>rotateZ(90deg)</span>and for scale we use <span>
+                    scalex() or scaleY() and scale()
+                </span> andd finally skew they all the same. we can apply one or more 
+                transformations in transform like <span>transform: translate(100px, 200px) rotateZ(45deg);</span>
+            </dd>
         </dl>
+
+        <br><hr><h1>Animations</h1>
+        <pre class="lesson">Animation in css its kinda cool and tricky in here i will
+            explaing everything i know in it.
+
+            so firist to create an animation we do this syntex:
+            <span>@keyframe (animation name){from{(the animation changes)}}</span>
+            this "from" can be replaced to some stuff like to or a precntage
+            like 100%, 69% and what does that mean is: 
+            from : the anmtion is gonna go to its begning point
+            to:  the animation gonna start from its begning point
+            and the precntage mean that the anmaition will happen for example
+            60% and come back.
+
+            we can add more that one action to an animation but even if 
+            we did an animation it still doesnt work. why?. will to make it
+            work we have to add some propties to the thing we want to animate
+            like this:
+        </pre>
+
+        <br><hr><h1>animation tags:</h1>
+            <dl>
+                <dt>-animation-name</dt>
+                <dd>to make the element move we firist have to
+                    call the animation name we made in it propties
+                    using <span>animation-name: (animation name);</span>
+                </dd>
+
+                <dt>-animation-duration</dt>
+                <dd>but even after adding the animtion to the element
+                    it doesnt move why? cause we have to add an duration
+                    to the animation firist so it happen in a certin time
+                    we use this :<span>animation-duration</span>
+                </dd>
+
+                <dt>-animation-iteration-count</dt>
+                <dd>this will tell the elemnt how many time it need
+                    to repeat the animation for example: 
+                    <span>animation-iteration-count: 2;</span> this 
+                    will repeat the animation 2 times but if set this
+                    value to <span>infinte</span> then it will repeat an 
+                    infinte amount of times.
+                </dd>
+
+                <dt>-animation-direction</dt>
+                <dd>this will set the way the element move for example:
+                    normaly this will set like this:<span>animation-direction: normal;</span>
+                    will we can change the value normal to anything else like <span>reverse</span>:
+                    <div id="ani1" class="ani"></div>
+                    and there is also <span>alternate</span> which gonna make the 
+                    element go to its postion and return back :
+                    <div id="ani2" class="ani"></div>
+                    and there is also <span>alternate-reverse</span> whats do what you think:
+                    <div id="ani3" class="ani"></div>
+                </dd>
+
+                <dt>-animation-play-state</dt>
+                <dd>there is 2 values for this firist <span>paused</span>
+                and <span>running</span> its obvious what it do and it could be
+                  usefule in javascript</dd>
+                
+                <dt>-animation-timing-function</dt>
+                <dd>the default value of this is <span>ease-in-out</span>
+                which look like this: <div id="ani4" class="ani"></div>
+                there is some diffrent things we can put like <span>linear</span>
+                which look like this:<div id="ani5" class="ani"></div>and there 
+                is also a cool thing we can add which is <span>steps()</span>
+                this trigger how much steps or frames to complete the animation
+                for example if we set this to 5 it will look like this:
+                <div id="ani6" class="ani"></div>cool right? here is even a 
+                better thing if we right click on the element and then click inspect then
+                styles we can find the -animation-timing-function then we 
+                we click on the purple box and a curve appear and we can make our
+                own -animation-timing-function<img src="curve.png" class="pic"> then we copy the cubic bezier and paste it
+                and it will move like the curve for example:<div id="ani7"></div></dd>
+            </dl>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+            <pre class="lesson">well that was Css:) it was a nice journey learning it.cause
+it will be helpful in the future.
+
+look for secrets upon it.
+
+&copy; by ADOX.
+
+12/10/23
+            </pre>
     </body>
 </html>
